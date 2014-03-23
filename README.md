@@ -1,4 +1,6 @@
-UD651-Course-Notes
-==================
+UD651 Lesson 2 Notes by mrandrewandrade
+========================================================
 
-Notes for Udacity's Exploratory Data Analysis Course UD651
+UD651 Udacity's Exploratory Data Analysis Course Notes by Andrew Andrade || mrandrewandrade.com  || March 22nd, 2014 || (CC BY-NC 2.5)
+
+
