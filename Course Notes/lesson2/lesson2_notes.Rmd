@@ -1,0 +1,124 @@
+UD651 Lesson 2 Notes by mrandrewandrade
+========================================================
+
+UD651 Udacity's Exploratory Data Analysis Course Notes by Andrew Andrade || mrandrewandrade.com  || March 22nd, 2014 || (CC BY-NC 2.5)
+***
+
+### Install R and RStudio
+
+Download and install the R programming language FIRST at http://cran.rstudio.com. 
+
+After you install R, you can download and install RStudio from http://www.rstudio.com.
+
+### RStudio Layout
+Layout Guide:
+http://dss.princeton.edu/training/RStudio101.pdf
+
+***
+
+## Demystifying R Key Notes
+Learn to run nine commands: c, nchar, data, str, dim, names, row.names, head, and tail.
+
+### Part 1: Getting Started
+
+
+```{r}
+# Store instructor names in a vector
+udacious_instructors <- c("Chris Saden", "Lauren Castellano",
+              "Sarah Spikes","Dean Eckles",
+              "Andy Brown", "Moira Burke",
+              "Kunal Chawla")
+
+# Display contents of vector
+udacious_instructors
+
+# Store 1 to 10 then 1 to 20 in a vector
+numbers <- c(1:10)
+
+#display
+numbers
+
+#append 11:20
+numbers <- c(numbers, 11:20)
+
+#display
+numbers
+```
+
+
+#### Display number of characters using nchar:
+```{r}
+udacious <- c("Chris Saden", "Lauren Castellano",
+              "Sarah Spikes","Dean Eckles",
+              "Andy Brown", "Moira Burke",
+              "Kunal Chawla", "Andrew Andrade")
+
+# vector that contains the number of characters
+# for each of the names in udacious, including my name.
+nchar_output = nchar(udacious)
+nchar_output
+
+# Check if name in vector contains exactly 11 characters
+nchar_output == 11
+
+# Output names with 11 charaters only
+udacious[nchar_output  == 11]
+
+```
+
+### Example 2: Understanding Dataframes
+
+```{r}
+#load mtcars data
+data(mtcars)
+#display the variable names in mtcars
+names(mtcars)
+#display help
+?mtcars
+#display data frame in table form
+mtcars
+
+#display structur of data fram
+str(mtcars)
+
+#displays the size of the data frame
+dim(mtcars)
+
+#help for row names
+?row.names
+
+# Change the row names of the cars to numbers.
+row.names(mtcars) <- c(1:32)
+# Show changes:
+mtcars
+
+#reload the data to reset row names
+data(mtcars)
+
+#display first 6 entries (default)
+head(mtcars)
+
+#display first 10 entries
+head(mtcars, 10)
+
+#display last 3 entries
+tail(mtcars, 3)
+
+```
+
+#### Note: R uses 1 to start indexing (AND NOT ZERO BASED INDEXING as is true of many other programming languages.)
+
+
+
+### Example 3: Examine Data More Closely
+
+
+```{r}
+#Access an individual variable (or column) from the data frame
+mtcars$mpg
+#Find average of that column
+mean(mtcars$mpg)
+```
+
+
+***
