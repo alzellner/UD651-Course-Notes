@@ -421,3 +421,7 @@ percentMobileCheckins <- sum(TRUE == pf$mobile_check_in) / length(pf$mobile_chec
 percentMobileCheckins
 
 ```
+
+********
+# CONGRATULATIONS
+#### You'll now learnt the basics of exploring one variable.  Time to put the knowledge to use!

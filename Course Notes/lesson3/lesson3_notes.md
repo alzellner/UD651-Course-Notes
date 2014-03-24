@@ -55,12 +55,8 @@ list.files()
 ```
 
 ```
-##  [1] "figure"                  "freq plot sample.R"     
-##  [3] "lesson3_notes.html"      "lesson3_notes.md"       
-##  [5] "lesson3_notes.Rmd"       "lesson3_student.html"   
-##  [7] "lesson3_student.md"      "lesson3_student.rmd"    
-##  [9] "lesson3.rmd"             "pseudo_facebook.tsv"    
-## [11] "solution to freq poly.R"
+## [1] "figure"              "lesson3_notes.html"  "lesson3_notes.md"   
+## [4] "lesson3_notes.Rmd"   "pseudo_facebook.tsv"
 ```
 
 ```r
@@ -688,3 +684,7 @@ percentMobileCheckins
 ## [1] 64.59
 ```
 
+
+********
+# CONGRATULATIONS
+#### You'll now learnt the basics of exploring one variable.  Time to put the knowledge to use!
