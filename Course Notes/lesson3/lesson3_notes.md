@@ -29,7 +29,7 @@ Run the follow commands in the RStudio terminal:
 
 
 
-### <a name="E1"></a>Setting Up gglot
+### <a name="E1"></a>Example 1: Setting up gglot  
 Learn to use: list.files(), read.delim, load ggplot2 and ggthemes library, scale_x_discrete
 
 
@@ -130,7 +130,7 @@ ggplot(data = pf, aes(x = dob_day)) + geom_histogram() + scale_x_discrete(breaks
 
 
 
-### <a name="E3"></a>Limiting and Labling Axis, Adjusting Bin Width
+### <a name="E3"></a>Example 3: Limiting and labling axis, adjusting bin width
 Reference: http://docs.ggplot2.org/current/scale_continuous.html      
 Learn to use:  xlim, scale_x_continous, 
 
@@ -212,7 +212,7 @@ ggplot(aes(x = friend_count), data = pf) + geom_histogram() + scale_x_continuous
 
 
 
-### <a name="E4"></a>Faceting friend count into men and women and filtering NA values
+### <a name="E4"></a>Example 4: Faceting friend count into men and women and filtering NA values
 Reference: http://www.statmethods.net/input/missingdata.html
 Learn to use: facet_wrap, by
 
@@ -275,7 +275,7 @@ by(pf$friend_count, pf$gender, summary)
 ```
 
 
-### <a name="E5"></a> Playing with color themes and exploring tensure and ages
+### <a name="E5"></a> Example 5: Playing with color themes and exploring tensure and ages
 Reference: http://docs.ggplot2.org/0.9.2.1/theme.html
 Learn to use: color, fill, xlab, ylab
 
@@ -320,7 +320,7 @@ qplot(x = age, data = pf, binwidth = 1, color = I("black"), fill = I("#099DD9"))
 
 
 
-### <a name="E6"></a> Transforming Data
+### <a name="E6"></a> Example 6: Transforming data
 Reference:       
 Creating multiple plots in one image:      
 http://lightonphiri.org/blog/ggplot2-multiple-plots-in-one-graph-using-gridextra       
@@ -440,7 +440,7 @@ grid.arrange(p1, p2, p3, ncol = 1)
 
 
 
-### <a name="E7"></a> Overlaying Frequency Polygons to count total friends and likes
+### <a name="E7"></a> Example 7: Overlaying Frequency Polygons to count total friends and likes 
 
 Learn to use: frequency polygons, overlay plots,  subset
 
@@ -547,7 +547,7 @@ by(pf$www_likes, pf$gender, sum)
 ```
 
 
-### <a name="E8"></a> Box plot
+### <a name="E8"></a> Example 8: Box plot
 Reference: http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/
 
 Learn to use: boxplot, setting coordinatesand limits on boxplot (coord_cartesian)
@@ -652,7 +652,7 @@ qplot(x = gender, y = friendships_initiated, data = subset(pf, !is.na(gender)),
 
 
 
-### <a name="E9"></a> Adding new logical variables
+### <a name="E9"></a> Example 9: Adding new logical variables
 
 Learn to use: what you have learned to create logical variables
 
